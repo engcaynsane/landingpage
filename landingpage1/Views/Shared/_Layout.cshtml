@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fbfaf7" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/landingpage1.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="brand" asp-area="" asp-controller="Home" asp-action="Index" aria-label="Learnly home">
+                <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span>learnly</span>
+            </a>
+            <div class="nav-links">
+                <a href="#courses">Explore</a>
+                <a href="#how-it-works">How it works</a>
+            </div>
+            <a class="nav-cta" href="#courses">Start learning <span aria-hidden="true">→</span></a>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer class="site-footer">
+        <a class="brand footer-brand" asp-area="" asp-controller="Home" asp-action="Index">
+            <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>learnly</span>
+        </a>
+        <p>Make a little time for a lot of possibility.</p>
+        <span class="copyright">&copy; 2026 Learnly</span>
+    </footer>
+</body>
+</html>
